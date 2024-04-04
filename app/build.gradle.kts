@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    kotlin("kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -50,6 +52,15 @@ android {
 }
 
 dependencies {
+
+
+    implementation(project(":data"))
+    implementation(project(":domain"))
+
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
+
+    implementation("androidx.compose.runtime:runtime-livedata:1.6.4")
 
     implementation("io.coil-kt:coil-compose:2.6.0")
 
