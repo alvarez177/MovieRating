@@ -1,4 +1,4 @@
-package com.sazcode.movierating
+package com.sazcode.movierating.presentation
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -9,9 +9,6 @@ import com.sazcode.domain.usecase.GetMoviesUseCase
 import com.sazcode.movierating.mapper.toMovieView
 import com.sazcode.movierating.model.ContentState
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.channels.BufferOverflow
-import kotlinx.coroutines.flow.MutableSharedFlow
-import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
