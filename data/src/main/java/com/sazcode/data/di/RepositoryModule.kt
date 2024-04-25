@@ -1,7 +1,7 @@
 package com.sazcode.data.di
 
-import com.sazcode.data.repository.GetMoviesRepositoryImpl
-import com.sazcode.domain.abstractrepository.GetMoviesRepository
+import com.sazcode.data.repository.MoviesRepositoryImpl
+import com.sazcode.domain.abstractrepository.MoviesRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -14,6 +14,6 @@ abstract class RepositoryModule {
 
     @Singleton
     @Binds
-    abstract fun bindGetMoviesRepository(getMoviesRepositoryImpl: GetMoviesRepositoryImpl): GetMoviesRepository
+    abstract fun bindGetMoviesRepository(getMoviesRepositoryImpl: MoviesRepositoryImpl): MoviesRepository
 
 }

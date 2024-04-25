@@ -53,6 +53,9 @@ android {
 
 dependencies {
 
+    val nav_version = "2.7.7"
+
+    implementation ("androidx.navigation:navigation-compose:$nav_version")
 
     implementation(project(":data"))
     implementation(project(":domain"))
@@ -63,6 +66,12 @@ dependencies {
     implementation("androidx.compose.runtime:runtime-livedata:1.6.4")
 
     implementation("io.coil-kt:coil-compose:2.6.0")
+
+    implementation("androidx.navigation:navigation-compose:2.7.7")
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+
+    implementation ("androidx.compose.material:material-icons-extended:1.6.5")
+
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
