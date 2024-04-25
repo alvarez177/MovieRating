@@ -15,5 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "MovieRating"
 include(":app")
-include(":data")
-include(":domain")
